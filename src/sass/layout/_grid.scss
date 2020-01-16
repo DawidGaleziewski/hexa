@@ -1,14 +1,5 @@
-// GRID VARIABLES
-$grid-max-width: 768;
-$grid__columns: 12;
-
-// BREAKPOINTS
-$grid__breakpoint--medium: 768;
-$grid__breakpoint--large: 992;
-$grid__breakpoint--extra-large: 1200;
-
 .container {
-  background-color: #e5e5e5;
+  // background-color: #e5e5e5;
   max-width: $grid-max-width * 1px;
   margin: 0 auto;
 
@@ -18,16 +9,11 @@ $grid__breakpoint--extra-large: 1200;
   }
 
   .row {
-    background-color: #990f0f;
+    // background-color: #990f0f;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
   }
-}
-
-.col {
-  background-color: #ff0000;
-  border: 1px solid #000;
 }
 
 // Create col-sm-n classes for small breakpoint

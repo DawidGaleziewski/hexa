@@ -1,0 +1,26 @@
+.main-nav {
+  display: flex;
+
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__item {
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #001111;
+      transition: all 0.5s;
+      margin-right: 2rem;
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      &:hover {
+        color: #4095b0;
+      }
+    }
+  }
+}

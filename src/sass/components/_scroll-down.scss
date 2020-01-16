@@ -1,0 +1,29 @@
+.scroll-down {
+  position: absolute;
+  bottom: 5vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  cursor: pointer;
+
+  &__icon {
+    font-size: 4rem;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1.3;
+    background-color: rgba(#000, 0.5);
+    border-radius: 100px;
+    width: 5rem;
+    height: 5rem;
+  }
+
+  &__text {
+    display: block;
+    text-align: center;
+    font-size: 1.6rem;
+    color: rgba(#fff, 0.5);
+    text-shadow: -2px 3px 2px #000;
+  }
+}

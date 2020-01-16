@@ -1,3 +1,17 @@
-.main-navbar {
-  background-color: red;
+.section-intro {
+  position: relative;
+  min-height: 90vh;
+  background-image: url("assets/mountains.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-ideas {
+  position: relative;
+  height: 90vh;
+  background-image: url("assets/rainbow-background.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

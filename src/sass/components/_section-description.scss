@@ -1,0 +1,23 @@
+.section-description {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+
+  &__header {
+    font-weight: 300;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 1.4rem;
+    background-color: #4ca2be;
+    padding: 1.2rem 2.3rem;
+  }
+
+  &__text {
+    font-size: 5.2rem;
+    font-weight: 300;
+    background-color: rgba(#000, 0.5);
+  }
+}
