@@ -1,0 +1,65 @@
+// GRID VARIABLES
+$grid-max-width: 768;
+$grid__columns: 12;
+
+// BREAKPOINTS
+$grid__breakpoint--medium: 768;
+$grid__breakpoint--large: 992;
+$grid__breakpoint--extra-large: 1200;
+
+.container {
+  background-color: #e5e5e5;
+  max-width: $grid-max-width * 1px;
+  margin: 0 auto;
+
+  &--fluid {
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .row {
+    background-color: #990f0f;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
+.col {
+  background-color: #ff0000;
+  border: 1px solid #000;
+}
+
+// Create col-sm-n classes for small breakpoint
+@for $i from 1 through $grid__columns {
+  .col-sm-#{$i} {
+    flex-basis: (100/ ($grid__columns / $i)) * 1%;
+  }
+}
+
+// Create col-sm-n classes for medium breakpoint
+@media screen and (min-width: $grid__breakpoint--medium * 1px) {
+  @for $i from 1 through $grid__columns {
+    .col-md-#{$i} {
+      flex-basis: (100/ ($grid__columns/ $i)) * 1%;
+    }
+  }
+}
+
+// Create col-lg-n classes for large breakpoint
+@media screen and (min-width: $grid__breakpoint--large * 1px) {
+  @for $i from 1 through $grid__columns {
+    .col-lg-#{$i} {
+      flex-basis: (100/ ($grid__columns/ $i)) * 1%;
+    }
+  }
+}
+
+// Create col-xl-n classes for extra large breakpoint
+@media screen and (min-width: $grid__breakpoint--extra-large * 1px) {
+  @for $i from 1 through $grid__columns {
+    .col-lg-#{$i} {
+      flex-basis: (100/ ($grid__columns/ $i)) * 1%;
+    }
+  }
+}
