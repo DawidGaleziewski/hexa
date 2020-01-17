@@ -1,0 +1,85 @@
+.carousel-profiles {
+  display: flex;
+  text-align: center;
+
+  &__profile {
+    flex-basis: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+
+  &__icon {
+    width: 15rem;
+    height: 15rem;
+    margin-bottom: 2rem;
+    margin: 0 auto;
+
+    // clip-path: polygon($shape-hexagon);
+
+    img {
+      //   width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__name {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  &__job-title {
+    color: #888;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  &__text {
+    display: inline-block;
+    color: #888;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 18rem;
+    margin: 0 auto;
+    min-height: 12rem;
+  }
+
+  &__media {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__social-media-item {
+    clip-path: polygon($shape-hexagon);
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.3rem;
+    line-height: 1.8;
+
+    &--twitter {
+      background-color: #69c8ed;
+    }
+
+    &--fb {
+      background-color: #496eb5;
+    }
+
+    &--google {
+      background-color: #363836;
+    }
+
+    a {
+      color: #fff;
+
+      i {
+        vertical-align: middle;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+}
