@@ -27,9 +27,26 @@
   .section-description--secondary {
     color: #fff;
     background-color: #58a6bf;
-    background: linear-gradient(rgba(rgb(88, 166, 191), 0.5)),
+    background: linear-gradient(rgba(88, 166, 191, 0.5)),
       url("assets/bg-light.png") center/cover no-repeat,
       url("assets/pc-background-2.jpg") center/cover no-repeat;
+
+    // min-height: 30vh;
+    padding: 12rem 0;
+  }
+
+  margin-bottom: 3.6rem;
+}
+
+.section-team {
+  background-color: #fff;
+
+  .section-description--secondary {
+    color: #fff;
+    background-color: rgb(99, 71, 36);
+    background: linear-gradient(rgba(99, 71, 36, 0.6)),
+      url("assets/bg-light.png") center/cover no-repeat,
+      url("assets/team-bg.jpg") top/cover no-repeat;
 
     // min-height: 30vh;
     padding: 12rem 0;
