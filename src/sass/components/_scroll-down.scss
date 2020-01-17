@@ -6,6 +6,12 @@
   text-align: center;
   cursor: pointer;
 
+  @media (max-width: $grid__breakpoint--medium * 1px) {
+    position: static;
+    transform: translate(0, 0);
+    padding-bottom: 6rem;
+  }
+
   &__icon {
     clip-path: polygon(48% 0, 95% 23%, 95% 75%, 50% 100%, 5% 73%, 5% 25%);
     font-size: 4rem;
@@ -19,6 +25,7 @@
     width: 5rem;
     height: 5rem;
     transition: all 0.7s;
+    backface-visibility: hidden;
   }
 
   &:hover &__icon {

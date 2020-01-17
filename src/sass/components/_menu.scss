@@ -1,18 +1,28 @@
 .main-nav {
   display: flex;
+  flex-wrap: wrap;
+
+  @media (max-width: $grid__breakpoint--medium * 1px) {
+    margin: 2rem auto 0 auto;
+    padding: 0 2rem;
+  }
 
   .menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     color: #001111;
 
     &__item {
       text-transform: uppercase;
       font-weight: 400;
-
       transition: all 0.5s;
       margin-right: 2rem;
+
+      @media (max-width: $grid__breakpoint--medium * 1px) {
+        margin-top: 2rem;
+      }
 
       a {
         text-decoration: none;

@@ -6,6 +6,12 @@
   color: #fff;
   text-align: center;
 
+  @media (max-width: $grid__breakpoint--medium * 1px) {
+    padding: 6rem 0;
+    position: static;
+    transform: translate(0, 0);
+  }
+
   &__header {
     font-weight: 300;
     text-transform: uppercase;
