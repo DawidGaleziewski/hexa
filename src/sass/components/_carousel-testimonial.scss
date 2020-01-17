@@ -7,6 +7,7 @@
   margin: 0 auto;
 
   &__testimonial-profile {
+    z-index: 2;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -17,6 +18,11 @@
     transform: scale(0.5) translate(-170%, -20%);
     filter: grayscale(100%);
     cursor: pointer;
+    transition: all 0.5s;
+  }
+
+  &__testimonial-profile--active {
+    z-index: 1;
   }
 
   // Target icon that is next to the active one
@@ -28,6 +34,8 @@
     max-width: 40rem;
     color: #444;
     display: none;
+    transition: all 0.5;
+    opacity: 0;
   }
 
   &__name {
@@ -38,6 +46,8 @@
     text-transform: uppercase;
     font-size: 1.4rem;
     font-weight: 400;
+    transition: all 0.5;
+    opacity: 0;
   }
 
   &__name::after {
@@ -69,10 +79,12 @@
   }
 
   &__testimonial-profile--active &__text {
-    display: inline;
+    display: block;
+    opacity: 1;
   }
 
   &__testimonial-profile--active &__name {
     display: inline-block;
+    opacity: 1;
   }
 }
