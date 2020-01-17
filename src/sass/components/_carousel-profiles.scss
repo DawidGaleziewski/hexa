@@ -1,18 +1,22 @@
 .carousel-profiles {
   display: flex;
   text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
 
   &__profile {
     flex-basis: 1;
-    flex-grow: 1;
-    flex-shrink: 1;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-bottom: 2rem;
   }
 
   &__icon {
     width: 15rem;
     height: 15rem;
-    margin-bottom: 2rem;
+
     margin: 0 auto;
+    margin-bottom: 2rem;
 
     // clip-path: polygon($shape-hexagon);
 
@@ -53,10 +57,10 @@
 
   &__social-media-item {
     clip-path: polygon($shape-hexagon);
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2.7rem;
+    height: 2.7rem;
     font-size: 1.3rem;
-    line-height: 1.8;
+    line-height: 1.9;
 
     &--twitter {
       background-color: #69c8ed;

@@ -40,6 +40,7 @@
 
 .section-team {
   background-color: #fff;
+  margin-bottom: 3.6rem;
 
   .section-description--secondary {
     color: #fff;
@@ -51,4 +52,9 @@
     // min-height: 30vh;
     padding: 12rem 0;
   }
+}
+
+.section-testimonial {
+  padding: 4rem 0;
+  background-color: #fff;
 }

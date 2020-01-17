@@ -1,0 +1,78 @@
+.carousel-testimonial {
+  position: relative;
+  text-align: center;
+  min-height: 40rem;
+  width: 100%;
+  display: inline-block;
+  margin: 0 auto;
+
+  &__testimonial-profile {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__icon {
+    margin-bottom: 2rem;
+    transform: scale(0.5) translate(-170%, -20%);
+    filter: grayscale(100%);
+    cursor: pointer;
+  }
+
+  // Target icon that is next to the active one
+  &__testimonial-profile--active + &__testimonial-profile &__icon {
+    transform: scale(0.5) translate(170%, -20%);
+  }
+
+  &__text {
+    max-width: 40rem;
+    color: #444;
+    display: none;
+  }
+
+  &__name {
+    position: relative;
+    display: none;
+    margin-top: 3rem;
+    color: #4ca2be;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+
+  &__name::after {
+    content: "";
+    background-color: #4ca2be;
+    position: absolute;
+    width: 5rem;
+    height: 1px;
+    right: calc(-5rem - 0.5rem);
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__name::before {
+    content: "";
+    background-color: #4ca2be;
+    position: absolute;
+    width: 5rem;
+    height: 1px;
+    left: calc(-5rem - 0.5rem);
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  //   Active styles
+  &__testimonial-profile--active &__icon {
+    transform: scale(1);
+    filter: grayscale(0%);
+  }
+
+  &__testimonial-profile--active &__text {
+    display: inline;
+  }
+
+  &__testimonial-profile--active &__name {
+    display: inline-block;
+  }
+}
