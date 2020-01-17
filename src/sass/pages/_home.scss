@@ -15,8 +15,23 @@
 }
 
 .section-services {
-  // min-height: 90vh;
+  min-height: 90vh;
   padding: 8rem 0 12rem 0;
-  margin-bottom: 3.6rem;
+  margin-bottom: 1.3rem;
   background: url("assets/pc-background.jpg") center/cover no-repeat;
+}
+
+.services-secondary {
+  background-color: #fff;
+
+  .section-description--secondary {
+    color: #fff;
+    background-color: #58a6bf;
+    background: linear-gradient(rgba(rgb(88, 166, 191), 0.5)),
+      url("assets/bg-light.png") center/cover no-repeat,
+      url("assets/pc-background-2.jpg") center/cover no-repeat;
+
+    // min-height: 30vh;
+    padding: 12rem 0;
+  }
 }
