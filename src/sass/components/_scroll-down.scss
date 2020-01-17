@@ -7,6 +7,7 @@
   cursor: pointer;
 
   &__icon {
+    clip-path: polygon(48% 0, 95% 23%, 95% 75%, 50% 100%, 5% 73%, 5% 25%);
     font-size: 4rem;
     color: #fff;
     display: inline-block;
@@ -17,6 +18,15 @@
     border-radius: 100px;
     width: 5rem;
     height: 5rem;
+    transition: all 0.7s;
+  }
+
+  &:hover &__icon {
+    transform: translateY(-4px);
+  }
+
+  &:hover &__icon:active {
+    transform: translateY(-2px);
   }
 
   &__text {

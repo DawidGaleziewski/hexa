@@ -5,11 +5,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: #001111;
 
     &__item {
       text-transform: uppercase;
-      font-weight: 700;
-      color: #001111;
+      font-weight: 400;
+
       transition: all 0.5s;
       margin-right: 2rem;
 
@@ -20,6 +21,16 @@
 
       &:hover {
         color: #4095b0;
+      }
+    }
+
+    &--dark-bg {
+      color: #baa1b4;
+      text-align: center;
+      margin: 0 auto;
+
+      .menu__item:hover {
+        color: #fff;
       }
     }
   }

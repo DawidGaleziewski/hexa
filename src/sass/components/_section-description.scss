@@ -20,4 +20,23 @@
     font-weight: 300;
     background-color: rgba(#000, 0.5);
   }
+
+  &--secondary {
+    position: relative;
+    text-align: center;
+
+    .section-description__header {
+      display: block;
+      background: transparent;
+      font-size: 4.2rem;
+      text-transform: initial;
+    }
+
+    .section-description__text {
+      display: inline-block;
+      background: transparent;
+      font-size: 1.4rem;
+      max-width: 40rem;
+    }
+  }
 }

@@ -1,0 +1,22 @@
+.item-hexagon-list {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+
+  &__icon {
+    margin-bottom: 2rem;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8rem;
+  }
+
+  &__text {
+    color: #888888;
+    max-width: 25rem;
+  }
+}

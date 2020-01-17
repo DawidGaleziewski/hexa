@@ -1,17 +1,22 @@
 .section-intro {
   position: relative;
   min-height: 90vh;
-  background-image: url("assets/mountains.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url("assets/mountains.jpg") center/cover no-repeat;
+
+  margin-bottom: 3.6rem;
 }
 
 .section-ideas {
+  margin-bottom: 3.6rem;
   position: relative;
-  height: 90vh;
-  background-image: url("assets/rainbow-background.jpg");
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
+  min-height: 90vh;
+  background: url("assets/rainbow-background.jpg") center/cover no-repeat
+    #454e55;
+}
+
+.section-services {
+  // min-height: 90vh;
+  padding: 8rem 0 12rem 0;
+  margin-bottom: 3.6rem;
+  background: url("assets/pc-background.jpg") center/cover no-repeat;
 }
