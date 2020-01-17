@@ -20,4 +20,36 @@
     color: #888888;
     max-width: 25rem;
   }
+
+  &--small {
+    text-align: left;
+
+    .item-hexagon-list__list-item {
+      max-width: 40rem;
+      margin-bottom: 8rem;
+    }
+
+    .item-hexagon-list__icon {
+      float: left;
+      max-width: 30%;
+      margin-right: 2rem;
+
+      img {
+        width: 100%;
+      }
+
+      &::after {
+        clear: both;
+      }
+    }
+
+    .item-hexagon-list__title {
+      margin-bottom: 1rem;
+    }
+
+    .item-hexagon-list__text {
+      font-size: 1.4rem;
+      max-width: 60%;
+    }
+  }
 }
