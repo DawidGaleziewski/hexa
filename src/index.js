@@ -15,7 +15,9 @@ const carouselTestimonial = new CarouselTestimonial(
 const carouselProfiles = new CarouselProfiles(
   "home-carousel-profiles",
   "carousel-profiles__slider",
-  "carousel-profiles__profile"
+  "carousel-profiles__profile",
+  "carousel-profiles__btn--previous",
+  "carousel-profiles__btn--next"
 );
 
 carouselTestimonial.init();
