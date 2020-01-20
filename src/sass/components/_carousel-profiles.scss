@@ -1,27 +1,25 @@
 .carousel-profiles {
-  display: flex;
+  height: 40rem;
   text-align: center;
-  flex-wrap: wrap;
-  justify-content: center;
+
+  &__slider {
+    position: relative;
+    // transform: translateX(0rem);
+  }
 
   &__profile {
-    flex-basis: 1;
-    flex-grow: 0;
-    flex-shrink: 0;
-    margin-bottom: 2rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30rem; //Width will be used in JS to calculate the absolute placment of the items on the axis
   }
 
   &__icon {
     width: 15rem;
     height: 15rem;
-
     margin: 0 auto;
     margin-bottom: 2rem;
-
-    // clip-path: polygon($shape-hexagon);
-
     img {
-      //   width: 100%;
       height: 100%;
     }
   }
