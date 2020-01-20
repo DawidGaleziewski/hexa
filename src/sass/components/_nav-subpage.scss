@@ -1,0 +1,43 @@
+.nav-subpage {
+  .menu {
+    position: relative;
+    color: #888888;
+    display: flex;
+    justify-content: center;
+    max-width: 80rem;
+    margin: 0 auto;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #e9e9e9;
+    }
+
+    &__item {
+      transition: color 0.5s ease-in;
+      cursor: pointer;
+      &:not(:last-child) {
+        margin-right: 2rem;
+        padding-bottom: 1rem;
+        border-bottom: transparent solid 1.5px;
+      }
+    }
+
+    &__item:hover {
+      color: #4ca2be;
+      border-bottom: #4ca2be solid 1.5px;
+    }
+
+    &__link {
+      text-decoration: none;
+      color: inherit;
+      text-transform: uppercase;
+      font-family: inherit;
+      font-size: 1.6rem;
+    }
+  }
+}
