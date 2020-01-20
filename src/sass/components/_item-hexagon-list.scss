@@ -3,8 +3,13 @@
   max-width: 1200px;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   text-align: center;
   flex-wrap: wrap;
+
+  // &__list-item {
+
+  // }
 
   &__icon {
     margin-bottom: 2rem;

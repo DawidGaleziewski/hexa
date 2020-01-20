@@ -3,6 +3,16 @@
   height: 40rem;
   text-align: center;
   overflow: hidden;
+  margin: 0 auto;
+  max-width: 90rem;
+
+  @media screen and (max-width: 88rem) {
+    max-width: 60rem;
+  }
+
+  @media screen and (max-width: 57rem) {
+    max-width: 28rem;
+  }
 
   &__btn {
     position: absolute;
