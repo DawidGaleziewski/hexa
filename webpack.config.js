@@ -1,26 +1,26 @@
-const path = require('path');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const HTMLWebpackPlugin = require('html-webpack-plugin');
-const CopyPlugin = require('copy-webpack-plugin');
+const path = require("path");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const HTMLWebpackPlugin = require("html-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   entry: {
-    bundle: './src/index.js'
+    bundle: "./src/index.js"
   },
   output: {
-    path: path.join(__dirname, 'dist'),
-    filename: '[name].[chunkhash].js',
-    publicPath: './'
+    path: path.join(__dirname, "dist"),
+    filename: "[name].[chunkhash].js",
+    publicPath: "./"
   },
   devServer: {
-    publicPath: '/'
+    publicPath: "/"
   },
   optimization: {
     splitChunks: {
       cacheGroups: {
         vendor: {
-          chunks: 'initial',
-          name: 'vendor',
+          chunks: "initial",
+          name: "vendor",
           test: /node_modules/,
           enforce: true
         }
@@ -32,7 +32,7 @@ module.exports = {
       // JAVASCRIPT
       {
         test: /\.js$/,
-        use: 'babel-loader',
+        use: "babel-loader",
         exclude: /node_modules/
       },
       // CSS
@@ -42,13 +42,13 @@ module.exports = {
           {
             loader: MiniCssExtractPlugin.loader,
             options: {
-              publicPath: '../',
-              hmr: process.env.NODE_ENV === 'development'
+              publicPath: "../",
+              hmr: process.env.NODE_ENV === "development"
             }
           },
-          'css-loader',
-          'postcss-loader',
-          'sass-loader'
+          "css-loader",
+          "postcss-loader",
+          "sass-loader"
         ]
       },
       // Images
@@ -56,23 +56,23 @@ module.exports = {
         test: /\.(jpe?g|png|gif|svg)$/,
         use: [
           {
-            loader: 'url-loader',
+            loader: "url-loader",
             options: { limit: 4000 }
           },
-          'image-webpack-loader'
+          "image-webpack-loader"
         ]
       }
     ]
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: '[name].[chunkhash].css',
-      chunkFilename: '[id].[chunkhash].css',
+      filename: "[name].[chunkhash].css",
+      chunkFilename: "[id].[chunkhash].css",
       ignoreOrder: false
     }),
     new HTMLWebpackPlugin({
-      template: './src/index.html'
+      template: "./src/index.html"
     }),
-    new CopyPlugin([{ from: './src/assets', to: './assets' }])
+    new CopyPlugin([{ from: "./src/assets", to: "./assets" }])
   ]
 };
