@@ -19,6 +19,7 @@
     filter: grayscale(100%);
     cursor: pointer;
     transition: all 0.5s;
+    display: inline-block;
   }
 
   &__testimonial-profile--active {
