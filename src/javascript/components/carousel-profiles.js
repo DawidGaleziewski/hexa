@@ -43,6 +43,7 @@ class CarouselProfiles {
 
   movePreviousHandler() {
     this.DOMBtnPrevious[0].addEventListener("click", () => {
+      console.log(this.translateXState - this.profileWidth);
       if (this.translateXState - this.profileWidth <= 0) {
         this.translateXState += this.profileWidth;
         this.DOMslider[0].style.transform = `translateX(${this.translateXState}px)`;
@@ -52,8 +53,13 @@ class CarouselProfiles {
 
   moveNextHandler() {
     this.DOMBtnNext[0].addEventListener("click", () => {
-      this.translateXState -= this.profileWidth;
-      this.DOMslider[0].style.transform = `translateX(${this.translateXState}px)`;
+      if (
+        this.translateXState - this.profileWidth >=
+        this.profileWidth * (this.DOMProfiles.length - 1) * -1
+      ) {
+        this.translateXState -= this.profileWidth;
+        this.DOMslider[0].style.transform = `translateX(${this.translateXState}px)`;
+      }
     });
   }
 
