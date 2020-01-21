@@ -16,15 +16,25 @@
     border: 1px solid #c5c5c5;
     color: inherit;
     font-family: inherit;
+
+    &::placeholder {
+      visibility: hidden;
+    }
   }
 
   &__label {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translate(0, -50%) scale(1);
     left: 2rem;
     color: #464646;
     font-size: 1.4rem;
+    transition: all 0.5s;
+  }
+
+  &__input:focus + &__label,
+  &__input:not(:placeholder-shown) + &__label {
+    transform: translate(0, -200%) scale(0.7);
   }
 
   &__message {
