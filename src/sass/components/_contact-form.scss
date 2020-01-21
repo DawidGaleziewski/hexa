@@ -22,6 +22,14 @@
     }
   }
 
+  &__input:valid {
+    outline-color: #3ec300;
+  }
+
+  &__input:invalid {
+    outline-color: #ff1d15;
+  }
+
   &__label {
     position: absolute;
     top: 50%;
