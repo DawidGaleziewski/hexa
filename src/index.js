@@ -4,6 +4,7 @@ import "./main.scss";
 // JavaScript bundling
 import CarouselTestimonial from "./javascript/components/carousel-testimonial";
 import CarouselProfiles from "./javascript/components/carousel-profiles";
+import Map from "./javascript/components/map";
 
 const carouselTestimonial = new CarouselTestimonial(
   "carousel-testimonial",
@@ -20,5 +21,8 @@ const carouselProfiles = new CarouselProfiles(
   "carousel-profiles__btn--next"
 );
 
+const map = new Map("map-contact");
+
 carouselTestimonial.init();
 carouselProfiles.init();
+map.initMap();

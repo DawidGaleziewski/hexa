@@ -13,6 +13,17 @@
       rel="stylesheet"
     />
     <script src="https://kit.fontawesome.com/5244e49073.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin=""/>
+
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+ integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+ crossorigin=""></script>
+
+ 
     <title>Hexa</title>
   </head>
   <body>
@@ -417,12 +428,14 @@
         </ul>
       </section>
 
+      <!-- WORK -->
       <section class="section-work">
         <header class="section-description--secondary u-margin-bottom-big">
           <h2 class="section-description__header">Work</h2>
           <p class="section-description__text u-margin-bottom-big">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
           </p>
+        </header>
 
           <nav class="nav-subpage u-margin-bottom-small">
             <ul class="menu">
@@ -506,9 +519,22 @@
                 <i class="photo-collection__icon photo-collection__icon--search fas fa-search"></i>
               </div>
               <img src="assets/work_section/nature.png" alt="collection image" class="photo-collection__img"></li>
-            
           </ul>
+      </section>
+
+      <section class="section-contact">
+        <header class="section-description--secondary u-margin-bottom-big">
+          <h2 class="section-description__header">Contact</h2>
+          <p class="section-description__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing.
+          </p>
         </header>
+
+        <!-- Container for leaflet map -->
+        <div id="map-contact" class="map">
+          <span class="map__border-bottom"></span>
+        </div>
+        
       </section>
     </main>
   </body>
