@@ -533,10 +533,31 @@
         <!-- Container for leaflet map -->
 
         <div id="map-contact" class="map">
-     
         </div>
         <div class="map__border-bottom">
         </div>
+
+        <form action="" class="contact-form">
+          <div class="contact-form__group">
+            <input id="contact-name" class="contact-form__input" type="text">
+            <label for="contact-name" class="contact-form__label">
+              <i class="far fa-user"></i>
+              Your Name
+            </label>
+          </div>
+
+          <div class="contact-form__group">
+            <input id="contact-email" class="contact-form__input" type="email">
+            <label for="contact-email" class="contact-form__label">
+              <i class="far fa-comment"></i>
+              Email
+            </label>
+          </div>
+
+          <textarea name="" id="contact-msg" cols="30" rows="10" class="contact-form__message"></textarea>
+         
+          <input type="submit" value="Send">
+        </form>
        
       </section>
     </main>

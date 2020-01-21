@@ -1,0 +1,36 @@
+.contact-form {
+  width: 45rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__group {
+    position: relative;
+    width: calc(50% - 1rem);
+  }
+
+  &__input {
+    padding: 1rem;
+    width: 100%;
+    border: 1px solid #c5c5c5;
+    color: inherit;
+    font-family: inherit;
+  }
+
+  &__label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 2rem;
+    color: #464646;
+    font-size: 1.4rem;
+  }
+
+  &__message {
+    margin-top: 2rem;
+    display: block;
+    width: 100%;
+    border: 1px solid #c5c5c5;
+  }
+}
