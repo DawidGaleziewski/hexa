@@ -73,4 +73,12 @@
 .section-contact {
   padding: 4rem 0;
   background-color: #fff;
+
+  .contact-form {
+    margin: 4rem auto 0 auto;
+
+    .submit-btn {
+      margin: 2rem 0 0 auto;
+    }
+  }
 }
