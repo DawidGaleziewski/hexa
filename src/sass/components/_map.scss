@@ -13,12 +13,10 @@
   //   left: 0;
   //   z-index: 5;
   // }
+}
 
-  &__border-bottm {
-    position: absolute;
-    height: 1.4rem;
-    width: 100%;
-    background-image: url("assets/lolipop-border.png");
-    bottom: -1.4rem;
-  }
+.map__border-bottom {
+  height: 0.7rem;
+  background-image: url("assets/lolipop.png");
+  display: block;
 }
